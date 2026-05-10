@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    overflow:hidden;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.game-card{
+    width:450px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+    padding:35px;
+    color:white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    animation:fadeIn 1s ease;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:15px;
+    font-size:2.2rem;
+    color:#38bdf8;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    line-height:1.6;
+    color:#cbd5e1;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+    outline:none;
+    transition:0.3s ease;
+}
+
+#start-btn,
+#next-btn,
+#restart-btn{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    font-size:1rem;
+    background:#38bdf8;
+    color:white;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+#start-btn:hover,
+#next-btn:hover,
+#restart-btn:hover{
+    background:#0ea5e9;
+    transform:translateY(-2px);
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    color:#94a3b8;
+    font-size:0.95rem;
+}
+
+#question{
+    margin-bottom:25px;
+    line-height:1.5;
+}
+
+.btn-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+}
+
+.answer-btn{
+    padding:14px;
+    border-radius:12px;
+    background:#1e293b;
+    color:white;
+    border:1px solid #334155;
+    text-align:left;
+    font-size:0.95rem;
+}
+
+.answer-btn:hover{
+    background:#334155;
+}
+
+.correct{
+    background:#16a34a !important;
+}
+
+.wrong{
+    background:#dc2626 !important;
+}
+
+.hidden{
+    display:none;
+}
+
+#final-score{
+    margin-top:20px;
+    font-size:1.3rem;
+    text-align:center;
+    color:#facc15;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:500px){
+
+    .game-card{
+        width:100%;
+        padding:25px;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+}

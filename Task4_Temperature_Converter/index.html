@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TempSync Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="converter-card">
+
+            <h1>TempSync Pro</h1>
+
+            <p class="subtitle">
+                Advanced Temperature Converter
+            </p>
+
+            <div class="input-group">
+
+                <label>Enter Temperature</label>
+
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter value"
+                >
+
+            </div>
+
+            <div class="selection-group">
+
+                <div class="select-box">
+
+                    <label>From</label>
+
+                    <select id="fromUnit">
+
+                        <option value="celsius">
+                            Celsius
+                        </option>
+
+                        <option value="fahrenheit">
+                            Fahrenheit
+                        </option>
+
+                        <option value="kelvin">
+                            Kelvin
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="select-box">
+
+                    <label>To</label>
+
+                    <select id="toUnit">
+
+                        <option value="fahrenheit">
+                            Fahrenheit
+                        </option>
+
+                        <option value="celsius">
+                            Celsius
+                        </option>
+
+                        <option value="kelvin">
+                            Kelvin
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <button onclick="convertTemperature()">
+                Convert Temperature
+            </button>
+
+            <div class="result-box">
+
+                <h2>Converted Result</h2>
+
+                <p id="result">
+                    -- 
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

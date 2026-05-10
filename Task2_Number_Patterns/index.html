@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Generator Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Pattern Generator Pro</h1>
+
+            <p class="subtitle">
+                Generate beautiful number and star patterns instantly.
+            </p>
+
+            <div class="controls">
+
+                <div class="input-group">
+                    <label>Choose Pattern</label>
+
+                    <select id="patternType">
+
+                        <option value="pyramid">Star Pyramid</option>
+
+                        <option value="reverse">
+                            Reverse Triangle
+                        </option>
+
+                        <option value="diamond">
+                            Diamond Pattern
+                        </option>
+
+                        <option value="number">
+                            Number Triangle
+                        </option>
+
+                        <option value="hollow">
+                            Hollow Pyramid
+                        </option>
+
+                    </select>
+                </div>
+
+                <div class="input-group">
+
+                    <label>Pattern Size</label>
+
+                    <input type="number"
+                           id="size"
+                           min="2"
+                           max="15"
+                           value="5">
+
+                </div>
+
+                <button onclick="generatePattern()">
+                    Generate Pattern
+                </button>
+
+            </div>
+
+            <div id="output"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

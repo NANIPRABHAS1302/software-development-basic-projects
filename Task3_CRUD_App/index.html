@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="app-card">
+
+            <h1>TaskFlow Pro</h1>
+
+            <p class="subtitle">
+                Smart CRUD Task Management System
+            </p>
+
+            <div class="task-input-section">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task..."
+                >
+
+                <button onclick="addTask()">
+                    Add Task
+                </button>
+
+            </div>
+
+            <div class="search-section">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search tasks..."
+                    onkeyup="searchTasks()"
+                >
+
+            </div>
+
+            <div id="taskList" class="task-list">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
